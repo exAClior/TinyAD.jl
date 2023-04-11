@@ -1,0 +1,9 @@
+name = "TinyAD"
+uuid = "673e833b-f517-4aee-a9da-c45bac71b507"
+authors = ["Yusheng Zhao<yushengzhao2020@outlook.com>",]
+version = "0.1.0"
+
+[deps]
+
+[compat]
+julia = "1.8"
