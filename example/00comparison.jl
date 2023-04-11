@@ -16,11 +16,11 @@ end
 
 
 function mag(x::AbstractVector)
-    return sqrt(sum(x.^2))
+    return sqrt(sum(x .^ 2))
 end
 
-function normalize!(in::AbstractVector,out::AbstractVector)
-    for i in 1:length(in)
+function normalize!(in::AbstractVector, out::AbstractVector)
+    for i = 1:length(in)
         # this is extremely in efficient
         out[i] = in[i] / mag(in)
     end
