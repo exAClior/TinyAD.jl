@@ -40,4 +40,7 @@
     f(x) = x^2
     @test f(Dual(randx, randdx))[2] ≈
           Enzyme.autodiff(Forward, f, DuplicatedNoNeed, Duplicated(randx, randdx))[1]
+
+    @test TinyAD.sin(Dual(randx,randdx))[2] ≈ Enzyme.autodiff(Forward, Base.sin, DuplicatedNoNeed, Duplicated(randx,randdx))[1]
+
 end
