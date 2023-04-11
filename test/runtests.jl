@@ -1,6 +1,4 @@
-using Test
+using Test, Enzyme
 using TinyAD
 
-@testset "TinyAD.jl" begin
-    @test 1 == 1
-end # TinyAD.jl tests
+include("basics.jl")
